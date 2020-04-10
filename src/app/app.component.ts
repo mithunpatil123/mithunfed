@@ -4,17 +4,10 @@ import {Employee } from './employee';
 @Component({
   selector: 'my-app',
   styleUrls: [ './app.component.css' ],
-  template: `<p>App Component</p>
- <app-hello [comp]="company" [n]="num"></app-hello>
-  `
-  //templateUrl: './app.component.html'
-  /*template: `<p> Event Binding = {{message}}</p>
- 
-  <p appHighlight>Mithunggg</p>
-  <input type = "text"  [(ngModel)]="message"/>
-  <ul><li *ngFor= "let a of numArray ">{{a}}</li></ul>
-{{numArray | odd}}
-  <ul><li *ngFor= "let a of emp">{{a.name}}</li></ul>`*/
+  //template: `<p>App Component</p>
+ //<app-hello [comp]="company" [n]="num"></app-hello>
+  //`
+  templateUrl: './app.component.html'
 
 })
 export class AppComponent  {
@@ -31,6 +24,10 @@ num:number = 22;
     },
     { "empId": 2, 
       "name": "Mithun", 
+    "age":33
+    },
+    { "empId": 3, 
+      "name": "Mithun123", 
     "age":33
     }
 ];

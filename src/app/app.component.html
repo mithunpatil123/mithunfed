@@ -1,6 +1,6 @@
 
 <p>
-  Start ediddting to see some magic happen :)
+  Start editing to see some magic happen :)
   </p>
 <label> Filter </label>
 <input type ="text" [(ngModel)] = 'nameFilter'/>
@@ -17,3 +17,17 @@
       <td>{{employee.name}}</td>
     </tr>
   </table>
+
+<p> Event Binding = {{message}}</p>
+ 
+  <p appHighlight>Mithunggg</p>
+  <input type = "text"  [(ngModel)]="message"/>
+  <ul><li *ngFor= "let a of numArray ">{{a}}</li></ul>
+{{numArray | odd}}
+  <ul><li *ngFor= "let a of emp">{{a.name}}</li></ul><p> Event Binding = {{message}}</p>
+ 
+  <p appHighlight>Mithunggg</p>
+  <input type = "text"  [(ngModel)]="message"/>
+  <ul><li *ngFor= "let a of numArray ">{{a}}</li></ul>
+{{numArray | odd}}
+  <ul><li *ngFor= "let a of emp">{{a.name}}</li></ul>
