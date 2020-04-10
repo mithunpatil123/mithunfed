@@ -13,8 +13,8 @@
   
 
     <tr *ngFor='let employee of employees | employeeFilter : nameFilter' >
-      <td>{{employee.empId}}</td>
-      <td>{{employee.name}}</td>
+      <td>{{employee.name | uppercase}}</td>
+      <td>{{employee.age}}</td>
     </tr>
   </table>
 
