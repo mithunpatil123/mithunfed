@@ -1,0 +1,19 @@
+
+<p>
+  Start ediddting to see some magic happen :)
+  </p>
+<label> Filter </label>
+<input type ="text" [(ngModel)] = 'nameFilter'/>
+  <table border = 1>
+    
+    <tr>
+     <td>Name</td>
+      <td>Age</td></tr>
+    
+  
+
+    <tr *ngFor='let employee of employees | employeeFilter : nameFilter' >
+      <td>{{employee.empId}}</td>
+      <td>{{employee.name}}</td>
+    </tr>
+  </table>
