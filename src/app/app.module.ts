@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared/shared.module';
 import { OddPipe } from './odd.pipe';
-import { HelloComponent } from './hello/hello/hello.component';
+import { HelloComponent } from './hello/hello.component';
 
 
 
